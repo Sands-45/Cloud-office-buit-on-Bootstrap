@@ -21,6 +21,15 @@
 }
 }
 /* Cursor */
-.txt-type > .txt {
+.txt-type{
   border-right: 0.2rem solid #000;
+  animation:blinker 1s infinite linear;
+}
+@keyframes  blinker{
+	0%,100%{
+		border-right: none;
+	}
+	50%{
+		border-right: 0.2rem solid #000;
+	}
 }
